@@ -1,7 +1,9 @@
+package com.example.appy;
+
 import java.util.ArrayList;
 
 public class user {
- String username = "";
+ static String username = "";
  String email = "";
  String password = "";
  ArrayList<String> followingList = new ArrayList<>();
@@ -32,7 +34,7 @@ public class user {
   }
 
 
- public String getUsername() {
+ public static String getUsername() {
   return username;
  }
 

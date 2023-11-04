@@ -1,3 +1,5 @@
+package com.example.appy;
+
 public class post {
     String title = "";
     String contents = "";
