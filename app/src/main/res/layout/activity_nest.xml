@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+   xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#669E68"
+    android:backgroundTint="#669E68"
+    tools:context=".nest">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/topAppBar"
+        android:layout_width="411dp"
+        android:layout_height="104dp"
+        android:layout_gravity="bottom"
+        app:backgroundTint="#0A713C"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp" />
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottomAppBar"
+        android:layout_width="411dp"
+        android:layout_height="104dp"
+        android:layout_gravity="bottom"
+        app:backgroundTint="#0A713C"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="745dp" />
+
+    <ImageButton
+        android:id="@+id/nestAccess"
+        android:layout_width="89dp"
+        android:layout_height="90dp"
+        app:srcCompat="@android:drawable/btn_star_big_on"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="759dp" />
+
+    <ImageButton
+        android:id="@+id/nestAccess2"
+        android:layout_width="89dp"
+        android:layout_height="90dp"
+        app:srcCompat="@android:drawable/btn_star_big_on"
+        tools:layout_editor_absoluteX="161dp"
+        tools:layout_editor_absoluteY="759dp" />
+
+    <ImageButton
+        android:id="@+id/nestAccess3"
+        android:layout_width="89dp"
+        android:layout_height="90dp"
+        app:srcCompat="@android:drawable/btn_star_big_on"
+        tools:layout_editor_absoluteX="322dp"
+        tools:layout_editor_absoluteY="759dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="116dp"
+        android:layout_height="104dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ScrollView
+        android:layout_width="409dp"
+        android:layout_height="639dp"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="105dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <include
+            layout = "@layout/postview" />
+        </LinearLayout>
+
+
+
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/usernameanddetails"
+        android:layout_width="277dp"
+        android:layout_height="51dp"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="126dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
